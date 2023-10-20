@@ -12,7 +12,9 @@ const Details = () => {
 
   useEffect(() => {
     dispatch(updateCurrentPage('Details'));
-    dispatch(setCharacterName(character.name));
+    if (character) {
+      dispatch(setCharacterName(character.name));
+    }
   }, [dispatch, id]);
 
   return (
