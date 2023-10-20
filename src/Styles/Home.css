@@ -13,6 +13,7 @@
   }
   
   .searchBar {
+    justify-content: space-between;
     height: 30px;
     background-color: rgba(24, 52, 107, 0.921);
     display: flex;
@@ -61,6 +62,7 @@
     text-align: right;
     padding-right: 6%;
     padding-top: 3%;
+    color: whitesmoke;
   }
   
   .span {
