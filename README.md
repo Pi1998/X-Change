@@ -8,7 +8,7 @@
 
 # 📗 Table of Contents
 
-- [� Table of Contents](#-table-of-contents)
+- [📗 Table of Contents](#-table-of-contents)
 - [📖 Marvel Folio](#-marvel-folio)
   - [🛠 Built With ](#-built-with-)
     - [Key Features ](#key-features-)
@@ -29,7 +29,9 @@
 
 # 📖 Marvel Folio<a name="about-project"></a>
 
- The Marvel Folio is an interactive and user-friendly mobile application designed for Marvel Comics enthusiasts. This app offers a comprehensive and engaging experience for fans of the Marvel Universe, providing access to a vast collection of information about their favorite comic book characters. Users can explore, learn, and stay updated on various Marvel characters and their comics. For the styling of the web page, I used the Creative Commons design created by [Nelson Sakwa](https://www.behance.net/sakwadesignstudio).
+ - **The Marvel Folio** is an interactive and user-friendly mobile application designed for Marvel Comics enthusiasts. This app offers a comprehensive and engaging experience for fans of the Marvel Universe, providing access to a vast collection of information about their favorite comic book characters. Users can explore, learn, and stay updated on various Marvel characters and their comics. 
+ - For the styling of the web page, I used the Creative Commons design created by [**Nelson Sakwa**](https://www.behance.net/sakwadesignstudio).
+ - As for the API, all the data provided by [**Marvel**](http://marvel.com) © 2014 Marvel
 
 
 ## 🛠 Built With <a name="built-with"></a>
@@ -53,7 +55,7 @@
 
 ## 🚀 Live Demo <a name="live-demo">
   
-  - [Live version](https://mellifluous-haupia-bcf5dd.netlify.app/)
+  - [Live version]()
   
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -85,7 +87,7 @@ Clone this repository to your desired folder:
   cd my-folder
 ```
 ```sh
-  git clone git@github.com:anbehindY/game-of-thrones-characters.git
+  git clone git@https://github.com/Pi1998/marvel-folio.git
 ```
 
 
@@ -114,9 +116,8 @@ To run the project, execute the following command:
 
 👤 **Yan Min Thwin**
 
-- GitHub: [@anbehindY](https://github.com/anbehindY)
-- Twitter: [@yanminthwin](https://twitter.com/yanminthwin)
-- LinkedIn: [Yan Min Thwin](https://www.linkedin.com/in/yan-min-thwin-192862215)
+- GitHub: [@Pi1998](https://github.com/Pi1998)
+- LinkedIn: [Shinn Thant Swam Ye](https://www.linkedin.com/in/shinn-thant-swam-ye-4171a8257/)
 
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
@@ -125,8 +126,9 @@ To run the project, execute the following command:
 
 ## 🔭 Future Features <a name="future-features"></a>
 
-- [ ] **CSS transitions**
-- [ ] **Further asthetics CSS**
+- [ ] **CSS Update**
+- [ ] **Further functionalities**
+- [ ] **New Section for Movies and Series**
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -136,7 +138,7 @@ To run the project, execute the following command:
 
 Contributions, issues, and feature requests are welcome!
 
-- https://github.com/anbehindY/game-of-thrones-characters/issues
+  - [**Issue**](https://github.com/Pi1998/marvel-folio/issues)
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -144,7 +146,7 @@ Contributions, issues, and feature requests are welcome!
 
 ## ⭐️ Show your support <a name="support"></a>
 
-If you like this project, please give a star.
+Please give a star if you like this project.
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
@@ -152,8 +154,8 @@ If you like this project, please give a star.
 
 ## 🙏 Acknowledgments <a name="acknowledgements"></a>
 
-I would like to thank Microverse, my learning partners and every single Youtube channel. And most importantly,
-I want to give thanks to the owner of the web page design, [Nelson Sakwa](https://www.behance.net/sakwadesignstudio).
+I wish to express my gratitude to [Microverse](https://www.microverse.org/), my educational collaborators, and the online mentors who have contributed to my learning journey. Special appreciation is extended to [Nelson Sakwa](https://www.behance.net/sakwadesignstudio), the designer of the webpage. I would also like to extend my appreciation to [Marvel](http://marvel.com) for providing the API.
+
 
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
 
