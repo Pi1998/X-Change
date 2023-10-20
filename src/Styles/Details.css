@@ -2,18 +2,19 @@
     display: flex;
     flex-direction: column;
     align-items: center;
+    color: whitesmoke;
   }
   
   .characters > div:nth-child(even) {
     text-align: center;
-    padding: 5px 0;
+    padding: 10px 0;
     width: 100%;
     background-color: rgba(41, 79, 156, 0.921);
   }
   
   .characters > div:nth-child(odd) {
     text-align: center;
-    padding: 5px 0;
+    padding: 10px 0;
     width: 100%;
     background-color: rgb(59, 102, 189);
   }
