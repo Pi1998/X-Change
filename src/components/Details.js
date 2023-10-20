@@ -1,7 +1,7 @@
 import { useParams } from 'react-router';
 import { useSelector, useDispatch } from 'react-redux';
 import { useEffect } from 'react';
-import { updateCurrentPage } from '../Redux/Character/charactersSlice';
+import { updateCurrentPage, setCharacterName } from '../Redux/Character/charactersSlice';
 import '../Styles/Details.css';
 
 const Details = () => {
@@ -12,6 +12,7 @@ const Details = () => {
 
   useEffect(() => {
     dispatch(updateCurrentPage('Details'));
+    dispatch(setCharacterName(character.name));
   }, [dispatch, id]);
 
   return (
@@ -27,7 +28,7 @@ const Details = () => {
         />
       )}
       <div className="searchBar">
-        <p className="info">[{character.name}] Available Comics '{character.comics.available}'</p>
+        <p className="info">Available Comics '{character.comics.available}'</p>
       </div>
       <div className="charactersContainer">
         {character && (
