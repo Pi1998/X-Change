@@ -56,6 +56,9 @@ const characterSlice = createSlice({
     updateCurrentPage: (state, { payload }) => {
       state.currentPage = payload;
     },
+    setCharacterName: (state, { payload }) => {
+        state.characterName = payload;
+    },
   },
   extraReducers: (builder) => {
     builder
@@ -72,5 +75,5 @@ const characterSlice = createSlice({
   },
 });
 
-export const { setSearchValue, updateCurrentPage } = characterSlice.actions;
+export const { setSearchValue, updateCurrentPage, setCharacterName } = characterSlice.actions;
 export default characterSlice.reducer;
