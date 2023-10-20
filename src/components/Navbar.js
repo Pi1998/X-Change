@@ -7,6 +7,7 @@ import { updateCurrentPage } from '../Redux/Character/charactersSlice';
 
 const Navbar = () => {
   const currentPage = useSelector((state) => state.characters.currentPage);
+  const characterName = useSelector((state) => state.characters.characterName);
   const dispatch = useDispatch();
 
   return (
@@ -17,11 +18,15 @@ const Navbar = () => {
             <FaArrowLeft color="white" onClick={() => dispatch(updateCurrentPage('Home'))} />
           </Link>
         )}
+        {currentPage === 'Home' && <img src={logo} alt="logo" className="logo" />}
       </div>
-      {currentPage === 'Home' && <img src={logo} alt="logo" className="logo" />}
-      <div className="title">MarvelFolio</div>
-      <FaMicrophone color="white" fontSize="1.2em" />
-      <FaCog color="white" fontSize="1.2em" />
+      <div className="title">
+        {currentPage === 'Details' ? characterName : 'MarvelFolio'}
+      </div>
+      <div className="icon-container">
+        <FaMicrophone color="white" fontSize="1.2em" />
+        <FaCog color="white" fontSize="1.2em" />
+      </div>
     </div>
   );
 };
