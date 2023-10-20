@@ -30,7 +30,8 @@ const Details = () => {
         />
       )}
       <div className="searchBar">
-        <p className="info">Available Comics '{character.comics.available}'</p>
+        <p className="info">Available Comics:  <span style={{ color: 'red' }}>{character.comics.available}</span></p>
+        <p className="info">Data provided by Marvel. © 2014 Marvel</p>
       </div>
       <div className="charactersContainer">
         {character && (
