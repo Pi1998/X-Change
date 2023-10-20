@@ -10,37 +10,34 @@ const hash = md5(timestamp + privateKey + publicKey);
 export const getData = createAsyncThunk('characters/getMarvelCharacters', async () => {
   const apiUrl = `https://gateway.marvel.com/v1/public/characters?apikey=${publicKey}&ts=${timestamp}&hash=${hash}`;
 
-  try {
-    const response = await fetch(apiUrl);
-    if (!response.ok) {
-      throw new Error('Network response was not ok');
-    }
+  const response = await fetch(apiUrl);
 
-    const data = await response.json();
-
-    if (data && data.data && data.data.results) {
-      const filteredData = data.data.results.map((character) => ({
-        id: character.id,
-        name: character.name,
-        comics: {
-          available: character.comics.available,
-          items: character.comics.items.map((comic) => ({
-            name: comic.name,
-          })),
-        },
-        thumbnail: {
-          path: character.thumbnail.path,
-          extension: character.thumbnail.extension,
-        },
-      }));
-
-      return filteredData;
-    } else {
-      throw new Error('Invalid API response format');
-    }
-  } catch (error) {
-    throw error;
+  if (!response.ok) {
+    throw new Error('Network response was not ok');
   }
+
+  const data = await response.json();
+
+  if (data && data.data && data.data.results) {
+    const filteredData = data.data.results.map((character) => ({
+      id: character.id,
+      name: character.name,
+      comics: {
+        available: character.comics.available,
+        items: character.comics.items.map((comic) => ({
+          name: comic.name,
+        })),
+      },
+      thumbnail: {
+        path: character.thumbnail.path,
+        extension: character.thumbnail.extension,
+      },
+    }));
+
+    return filteredData;
+  }
+
+  throw new Error('Invalid API response format');
 });
 
 const initialState = {

@@ -15,6 +15,7 @@ const Details = () => {
     if (character) {
       dispatch(setCharacterName(character.name));
     }
+    // eslint-disable-next-line
   }, [dispatch, id]);
 
   return (
@@ -30,7 +31,10 @@ const Details = () => {
         />
       )}
       <div className="searchBar">
-        <p className="info">Available Comics:  <span style={{ color: 'red' }}>{character.comics.available}</span></p>
+        <p className="info">
+          Available Comics:
+          <span style={{ color: 'red' }}>{character.comics.available}</span>
+        </p>
         <p className="info">Data provided by Marvel. © 2014 Marvel</p>
       </div>
       <div className="charactersContainer">

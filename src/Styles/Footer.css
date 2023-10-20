@@ -1,17 +1,17 @@
 .footer {
-    color: whitesmoke;
-    padding: 4%;
-  }
-  
-  .author {
-    margin: 0;
-  }
-  
-  .designCredit {
-    margin-bottom: 0;
-  }
-  
-  .link {
-    text-decoration: none;
-    color: lightblue;
-  }
+  color: whitesmoke;
+  padding: 4%;
+}
+
+.author {
+  margin: 0;
+}
+
+.designCredit {
+  margin-bottom: 0;
+}
+
+.link {
+  text-decoration: none;
+  color: lightblue;
+}
