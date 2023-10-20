@@ -1,7 +1,6 @@
 .menuContainer {
     display: flex;
     justify-content: space-between;
-    padding: 0 4% 0 0;
     background-color: rgba(41, 79, 156, 0.921);
     align-items: center;
     width: 100%;
