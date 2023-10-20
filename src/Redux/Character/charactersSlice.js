@@ -15,7 +15,22 @@ export const getData = createAsyncThunk('characters/getMarvelCharacters', async 
     const response = await axios.get(apiUrl);
 
     if (response.data && response.data.data && response.data.data.results) {
-      return response.data.data.results;
+      const filteredData = response.data.data.results.map((character) => ({
+        id: character.id,
+        name: character.name,
+        comics: {
+          available: character.comics.available,
+          items: character.comics.items.map((comic) => ({
+            name: comic.name,
+          })),
+        },
+        thumbnail: {
+          path: character.thumbnail.path,
+          extension: character.thumbnail.extension,
+        },
+      }));
+
+      return filteredData;
     } else {
       throw new Error('Invalid API response format');
     }
