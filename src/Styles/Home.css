@@ -6,9 +6,10 @@
   
   .banner {
     height: 200px;
-    background-color: green;
-    background-size: 129%;
-    background-position: 0 90%;
+    background-color: rgba(24, 52, 107, 0.921);
+    background-image: url(../Assets/marvel2.webp);
+    background-size: cover;
+    background-position: center;
   }
   
   .searchBar {
