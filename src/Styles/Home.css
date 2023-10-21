@@ -42,10 +42,15 @@
 .card {
   width: 50%;
   height: 180px;
-  background-color: rgba(41, 79, 156, 0.921);
 }
 
-.card:nth-child(3n+1) {
+.card:nth-child(4n+1),
+.card:nth-child(4n+4) {
+  background-color: rgba(41, 79, 156);
+}
+
+.card:nth-child(4n+2),
+.card:nth-child(4n+3) {
   background-color: rgb(59, 102, 189);
 }
 
