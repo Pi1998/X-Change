@@ -1,0 +1,14 @@
+html,
+#root {
+  height: 100vh;
+  background-color: rgba(41, 79, 156, 0.921);
+}
+
+body {
+  margin: 0;
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+code {
+  font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
