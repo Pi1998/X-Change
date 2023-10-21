@@ -55,7 +55,7 @@
 
 ## 🚀 Live Demo <a name="live-demo">
   
-  - [Live version]()
+  - [Live version](https://bejewelled-kringle-516d5f.netlify.app)
   
   
 <p align="right">(<a href="#readme-top">back to top</a>)</p>
